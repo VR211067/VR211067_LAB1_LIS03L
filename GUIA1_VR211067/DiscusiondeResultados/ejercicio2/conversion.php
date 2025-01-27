@@ -43,14 +43,14 @@
 </head>
 <body>
     <?php
-        // Recibir la cantidad de dólares del formulario
+       
         if(isset($_POST['cantidad_dolares']) && is_numeric($_POST['cantidad_dolares'])) {
             $cantidad_dolares = $_POST['cantidad_dolares'];
 
-            // Tasa de cambio (puedes actualizar este valor según la tasa real)
-            $tasa_cambio = 0.92;  // Ejemplo: 1 USD = 0.92 EUR
+         
+            $tasa_cambio = 0.92;  
 
-            // Realizar la conversión
+            
             $cantidad_euros = $cantidad_dolares * $tasa_cambio;
         } else {
             $cantidad_dolares = $cantidad_euros = 0;
@@ -60,7 +60,7 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">Resultado de Conversión</h2>
 
-        <!-- Tabla con los resultados -->
+        <!-- Tabla resultados -->
         <table class="table table-bordered">
             <tr>
                 <td>Cantidad en Dólares</td>
@@ -72,7 +72,7 @@
             </tr>
         </table>
 
-        <!-- Botón para regresar al formulario -->
+        <!-- Botón formulario -->
         <a href="form.html" class="btn btn-rosa">Volver al Formulario</a>
     </div>
 

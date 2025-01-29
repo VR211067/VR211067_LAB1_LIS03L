@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<materias>
+  <materia>
+    <codigo>LIS104</codigo>
+    <nombre>Lenguajes interpretados en el servidor</nombre>
+    <uvs>4</uvs>
+    <nota>8</nota>
+  </materia>
+  <materia>
+    <codigo>LIC</codigo>
+    <nombre>Lenguajes interpretados en el cliente</nombre>
+    <uvs>3</uvs>
+    <nota>9</nota>
+  </materia>
+<materia><codigo>EDI101</codigo><nombre>ECUACIONES DIFERENCIALES</nombre><uvs>4</uvs><nota>8.40</nota></materia></materias>

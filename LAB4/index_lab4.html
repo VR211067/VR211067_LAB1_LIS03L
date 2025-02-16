@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LABORATORIOS</title>
+    <title>EJEMPLOS DE PRÁCTICA Y GUÍA</title>
    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -46,33 +46,40 @@
     </style>
 </head>
 <body>
-    <h1>PRÁCTICAS DE LABORATORIO LIS03L - Némesis Valencia VR211067</h1>
+    <h1>PRÁCTICA 4 Y GUÍA 4 / Némesis Valencia VR211067</h1>
     
     <div class="carpeta">
-        <h2>LABORATORIO 1</h2>
-        <a href="LAB1/index_lab1.html" target="_blank">ir a LAB1</a>
+        <h2>Ejemplos de Clase</h2>
+        <a href="EJEMPLO_DE_CLASE/funciones.php" target="_blank">Ejercicio desarrollado en clase </a>
+      
+
+    </div>
+    
+    <div class="carpeta">
+        <h2>Ejemplos de Guía 4</h2>
+        <a href="ejemplo1/monedas.php" target="_blank">Ejemplo 1</a>
+        <a href="ejemplo2/fibonacci.php" target="_blank">Ejemplo 2</a>
+        <a href="ejemplo3/elmayor.php" target="_blank">Ejemplo 3</a>
+        <a href="ejemplo4/destinos.php" target="_blank">Ejemplo 4</a>
+        
+    </div>
+    <div class="carpeta">
+        <h2> Discusión de Resultados</h2>
+        <a href="EJERCICIO_DISCUSION_RESULTADOS/conversor.php" target="_blank">Ejercicio #1</a>
+       
+
     </div>
 
-    <div class="carpeta">
-        <h2>LABORATORIO 2</h2>
-        <a href="LAB2/index_lab2.html" target="_blank">ir a LAB2</a>
-    </div>
-    <div class="carpeta">
-        <h2>LABORATORIO 3</h2>
-        <a href="LAB3/index_lab3.html" target="_blank">ir a LAB3</a>
-    </div>
-
-    <div class="carpeta">
-        <h2>LABORATORIO 4</h2>
-        <a href="LAB4/index_lab4.html" target="_blank">ir a LAB4</a>
-    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
     <script>
+       
         document.querySelectorAll('.carpeta a').forEach(function(link) {
             link.addEventListener('click', function() {
+              
                 document.querySelectorAll('.carpeta a').forEach(function(a) {
                     a.classList.remove('active');
                 });
@@ -82,3 +89,4 @@
     </script>
 </body>
 </html>
+

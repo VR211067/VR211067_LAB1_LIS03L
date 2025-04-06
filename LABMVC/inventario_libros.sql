@@ -25,27 +25,6 @@ USE inventario_libros;
 DELIMITER $$
 --
 -- Procedimientos
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_detallesLibro`(in _codigo varchar(9))
-BEGIN
-SELECT libros.codigo_libro,
-       libros.nombre_libro,
-       libros.existencias,
-       libros.precio,
-       autores.nombre_autor,
-       editoriales.nombre_editorial,
-       generos.nombre_genero,
-       libros.descripcion
-  FROM ((inventario_libros.libros libros
-         INNER JOIN inventario_libros.generos generos
-            ON (libros.id_genero = generos.id_genero))
-        INNER JOIN inventario_libros.autores autores
-           ON (libros.codigo_autor = autores.codigo_autor))
-       INNER JOIN inventario_libros.editoriales editoriales
-          ON (libros.codigo_editorial = editoriales.codigo_editorial)
-          WHERE libros.codigo_libro=_codigo;
-END$$
-
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_eliminarAutor`(in _codigo_autor varchar(6))
 BEGIN
 	DELETE FROM autores WHERE codigo_autor=_codigo_autor;

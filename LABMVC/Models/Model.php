@@ -1,13 +1,13 @@
 <?php
 abstract class Model{
         
-    private $host= 'localhost:3306';
-    private $user= 'root';
-    private $password= '';
-    private $db_name= 'inventario_libros';
+    private $host= 'sql101.infinityfree.com';
+    private $user= 'if0_38229697';
+    private $password= 'ZiIEhw1jroWfl';
+    private $db_name= 'if0_38229697_inventario_libros';
     protected $conn;
 
-    //crear conexion
+     //crear conexion
     protected function open_db(){
         try{
                 $this->conn=new PDO("mysql:host=$this->host; dbname=$this->db_name; charset=utf8",$this->user,$this->password);
@@ -17,11 +17,10 @@ abstract class Model{
         }
     }
 
-    //metodo para cerrar conexion
+//metodo para cerrar conexion
     protected function close_db(){
         $this->conn=null;
     }
-
 
     protected function get_query($query,$params=array()){
         try{

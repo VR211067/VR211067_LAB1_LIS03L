@@ -3,15 +3,15 @@ include_once 'Models/EditorialesModel.php';
 include_once 'Models/AutoresModel.php';
 $model = new AutoresModel();
 
-/*$editorial=[
+/*$autor=[
 
     'codigo_autor'=> "AUT789",
     'nombre_autor'=> "Nemesis",
     'nacionalidad'=> "salvadoreña"
 ];*/
-//echo $model->insert($editorial);
-//echo $model->update($editorial);
-echo $model->delete('AUT789');
+//echo $model->insert($autor);
+//echo $model->update($autor);
+//echo $model->delete('AUT789');
 var_dump($model->get());
 
 

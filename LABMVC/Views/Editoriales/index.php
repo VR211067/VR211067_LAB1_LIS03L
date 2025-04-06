@@ -34,7 +34,8 @@
                             <td><?=$editorial['nombre_editorial']?></td>
                             <td><?=$editorial['contacto']?></td>
                             <td><?=$editorial['telefono']?></td>
-                            <td></td>
+                            <td><a href= "<?= PATH.'/Editoriales/delete/'.$editorial['codigo_editorial']?>"  class="btn btn-danger">Eliminar</a>
+                             <a href= "<?= PATH.'/Editoriales/edit/'.$editorial['codigo_editorial']?>"  class="btn btn-warning">Modificar</a></td>
                             
                         </tr>
                         <?php endforeach ?>

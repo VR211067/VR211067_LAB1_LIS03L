@@ -45,26 +45,90 @@
         }
     </style>
 </head>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+            gap: 20px; /* Espacio entre columnas y filas */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .carpeta {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .carpeta a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #e83e8c; /* Rosa */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .carpeta a.active, 
+        .carpeta a:hover {
+            background-color: #c2185b; /* Rosa más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+
+
 <body>
     <h1>PRÁCTICAS DE LABORATORIO LIS03L - Némesis Valencia VR211067</h1>
-    
-    <div class="carpeta">
-        <h2>LABORATORIO 1</h2>
-        <a href="LAB1/index_lab1.html" target="_blank">ir a LAB1</a>
-    </div>
 
-    <div class="carpeta">
-        <h2>LABORATORIO 2</h2>
-        <a href="LAB2/index_lab2.html" target="_blank">ir a LAB2</a>
-    </div>
-    <div class="carpeta">
-        <h2>LABORATORIO 3</h2>
-        <a href="LAB3/index_lab3.html" target="_blank">ir a LAB3</a>
-    </div>
+    <div class="contenedor">
+        <div class="carpeta">
+            <h2>LABORATORIO 1</h2>
+            <a href="LAB1/index_lab1.html" target="_blank">ir a LAB1</a>
+        </div>
 
-    <div class="carpeta">
-        <h2>LABORATORIO 4</h2>
-        <a href="LAB4/index_lab4.html" target="_blank">ir a LAB4</a>
+        <div class="carpeta">
+            <h2>LABORATORIO 2</h2>
+            <a href="LAB2/index_lab2.html" target="_blank">ir a LAB2</a>
+        </div>
+
+        <div class="carpeta">
+            <h2>LABORATORIO 3</h2>
+            <a href="LAB3/index_lab3.html" target="_blank">ir a LAB3</a>
+        </div>
+
+        <div class="carpeta">
+            <h2>LABORATORIO 4</h2>
+            <a href="LAB4/index_lab4.html" target="_blank">ir a LAB4</a>
+        </div>
+        <div class="carpeta">
+            <h2>LABORATORIO 5</h2>
+            <a href="LAB5/index_lab5.html" target="_blank">ir a LAB5</a>
+        </div>
+        <div class="carpeta">
+            <h2>LABORATORIO 6</h2>
+            <a href="LAB6/index_lab6.html" target="_blank">ir a LAB6</a>
+        </div>
+        <div class="carpeta">
+            <h2>LABORATORIO MVC</h2>
+            <a href="LABMVC/Editoriales" target="_blank">ir a Vista Editoriales</a>
+            <a href="LABMVC/Autores" target="_blank">ir a Vista Autores</a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -81,4 +145,5 @@
         });
     </script>
 </body>
+
 </html>
